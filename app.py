@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load the dataset
-dataframe = pd.read_csv("./news.csv")
+dataframe = pd.read_csv("./dataset/news.csv")
 
 # Split the data into training and testing sets
 x_train, x_test, y_train, y_test = train_test_split(
